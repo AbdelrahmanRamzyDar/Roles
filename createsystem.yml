@@ -1,0 +1,8 @@
+---
+- name: deploy system using enginx
+  hosts: "{{myhosts}}"
+  become: true
+  roles:
+    - installpackage
+    - configureenginx 
+    - loadbalance

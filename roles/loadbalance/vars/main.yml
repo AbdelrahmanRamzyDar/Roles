@@ -1,0 +1,6 @@
+---
+# vars file for loadbalance
+
+nginx:
+  - server1
+  - server2

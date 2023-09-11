@@ -1,0 +1,12 @@
+---
+# tasks file for configureenginx
+
+- name: Start Nginx service
+  service:
+   name: nginx
+   state: started
+
+- name: Enable Nginx service at boot
+  service:
+    name: nginx
+    enabled: yes

@@ -1,0 +1,7 @@
+---
+# tasks file for loadbalance
+- name: configure loadbalance
+  template:
+    src: templates/load.conf.j2
+    dest: /etc/nginx/conf.d/nginx_loadbalancer.conf
+  notify: restart nginx

@@ -1,0 +1,9 @@
+---
+#
+# tasks file for installpackage
+- name: install enginx
+  yum:
+    name: 
+     - nginx
+    state: installed
+
